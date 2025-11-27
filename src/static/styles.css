@@ -88,6 +88,7 @@ section h3 {
   margin-bottom: 6px;
 }
 
+
 .participants-list {
   list-style-type: disc;
   margin-left: 20px;
@@ -96,9 +97,31 @@ section h3 {
   font-size: 15px;
 }
 
+/* Hide bullet points for participants */
+.participants-list.no-bullets {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .participant-item {
   margin-bottom: 3px;
   padding-left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style for delete icon */
+.delete-icon {
+  color: #c62828;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #ff5252;
 }
 
 .no-participants {
